@@ -1,0 +1,68 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Hello</title>
+		<style type="text/css">
+
+			h1 {
+				color: yellow;
+				background-color: black;
+				border: 5px solid black;
+				overflow-x: hidden;
+			}
+			h2 {
+				height: 500px;
+				background: url('http://kingofwallpapers.com/happy/happy-015.jpg');
+				background-size: 33.3333% 33.3333%;
+			}
+			h3 {
+				color: blue;
+				background-color: green;
+			}
+			h4 {
+				color: green;
+				background-color: yellow;
+			}
+			h5 {
+				color: red;
+				background-color: black;
+			}
+		</style>
+	</head>
+
+	<body>
+		<h1>Title here</h1>
+		<h2>Title there</h2>
+		<h3>Title everywhere</h3>
+		<h4>Title nowhere</h4>
+		<h5>Title doesn't know where to go</h5>
+		<p>This is the first website I create!</p>
+		<p id= "myParagraph"></p>
+		<input type="text" id="myInput"></input>
+        <button type= "button" onclick="myInput">PRESS TO GET 1,000,000$</button>
+		<script>
+			//This is all javascripts.
+			/*
+			This is a comment
+			*/
+
+			function updateText() {
+				myParagraph.innerHTML = myInput.value;
+			}
+
+			var x = 5;
+			x = x + 2;
+			/*
+			alert('Hello');
+			*/
+			console.log(x);
+
+			var myParagraph = document.getElementById('myParagraph');
+			myParagraph.innerHTML = x;
+
+			var myInput = document.getElementById('myInput')
+			myInput.onkeypress = updateText;
+
+		</script>
+	</body>
+</html>
