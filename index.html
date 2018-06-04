@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html>
-	<meta http-equiv="X-UA-Compatible" content="IE=edge.chrome=1" charset="utf-8">
 	<head>
-		<title>Personal Index Page</title><!--个人网站初级Idea-->
+        <meta http-equiv="X-UA-Compatible" content="IE=edge.chrome=1" charset="utf-8">
+		<title>Main Page - V1ncentliu.io</title><!--个人网站初级Idea-->
         <link rel="shortcut icon" href="favicon.ico">
 		<style>
             body{
@@ -12,7 +12,7 @@
                 margin-left: 0px;
                 margin-top: 0px;
                 margin-right: 0px;
-                margin-bottom: 0px;
+                margin-bottom: 0px;   
             }
             a{ 
                 text-decoration: none;
@@ -30,19 +30,26 @@
                 margin: 0px;
                 float: inherit;
             }
-            .indexTitle{
-                //outline-style: outset;
-            }
             .newTab{
                 text-align: center;
+                //display:inline-block;
+                width:150px;
+                height:30px;
             }
             .newTab:hover{
                 outline-style: outset;
+            }
+            .directoryButton{
+                //display:inline-block;
+                
+                width: 25px;
+                left: 300px;
             }
             .menu{
                 font-size: 150%;
                 background-color: #113355;
                 text-align: left;
+                top: 500px;
                 height: 1000px;
                 width:150px;
                 float:left;
@@ -56,11 +63,15 @@
                 height: 1000px;
                 margin-left: 150px;
                 color: blanchedalmond;
+                
             }
-            .spaceForTheClock{
-                width:200px;
-                float:left;
-                margin:10px;
+            .toTop{
+                background-color: #113355; 
+                position: fixed;
+                right: 20px;
+                bottom: 20px;
+                padding: 15px;
+                outline-style: outset;
             }
             .searching{
                 width:200px;
@@ -73,8 +84,8 @@
 	           float: left;
                 margin: 10px;
                 font-size:150%;
-                
             }
+            
             .socialMedia{
                 width:200px;
                 float: left;
@@ -105,27 +116,30 @@
                 margin: 10px;
                 font-size:150%;
             }     
-            
-            
             .spinner {
                 position:absolute;
                 border-radius:100%;
                 overflow:hidden;
             }
-.num {
-	display:block;
-	position:absolute;
-	width:100%;
-	line-height:110%;
-}
-/*Hours*/
+            .num {
+	           display:block;
+	           position:absolute;
+	           width:100%;
+	           line-height:110%;
+            }
 
-#spinner_h1 .num_1 {
-	transform:rotate( 120deg );
-}
-#spinner_h1 .num_2 {
-	transform:rotate( 240deg );
-}
+            }
+            footer{
+                text-align: center;
+            }
+            /*Hours*/
+
+            #spinner_h1 .num_1 {
+	           transform:rotate( 120deg );
+            }
+            #spinner_h1 .num_2 {
+	           transform:rotate( 240deg );
+            }
 #spinner_h2 .num_1 {
 	transform:rotate( 36deg );
 }
@@ -538,22 +552,21 @@
             
             
         </style>
-
 	</head>
-	<body>
+	<body><div>        
+        <h1 class="indexTitle">主页&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Homepage</h1>
         
-            <div class="indexTitle"><h1>主页&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Homepage</h1></div>
-            <a class="newTab" target="_blank" href="about:blank" style="display:block;width:150px;height:30px;">A new tab</a>        
+            <a class="newTab" target="_blank" href="about:blank" style="display:inline-block;width:150px;height:30px;">A new tab</a>
+            <a class="directoryButton" href="directory.html" style="display: inline-block;height: 30px;"><img src="pic/directoryIcon.png" width="25px"></a>
+        </div>
         <div class="menu">
             <h3>常用网站</h3>
             <h4>Commonly used</h4>
             <p><img src="pic/baiduIcon.png" width="24px" ><a href="http://www.baidu.com" target="_blank">Baidu</a><br></p>
             <p><img src="pic/weiboIcon.png" width="25px"><a href="http://weibo.com/" target="_blank">Weibo</a><br></p>
             <p><img src="pic/bilibiliIcon.png" width="25px"><a href="http://www.bilibili.com/" target="_blank">Bilibili</a><br></p>
-            <br><br><br><br><br><br><br><br><br><br><br><br>
-
-        
-                    <div class="container">
+            <br><br><br><br><br><br><br><br><br><br><br><br>        
+            <div class="container">
 
 	<!-- Hours -->
 
@@ -716,9 +729,8 @@
 
     <div class="top">></div>
 
-</div>
-            
-                    <script>
+</div>            
+            <script>
 //These functions help add, remove or toggle css classes
 
 function tog_class(id, cl) {
@@ -843,20 +855,13 @@ function deswitcher(target, val) {
 window.onload = function() {
   startTime();
 };
-</script>
-            
-        
-        
-        
-        </div>
-        
-        <div class="mainFrame">
-            
-            
+</script>       
+        </div>        
+        <div class="mainFrame">           
             <div class="searching">
                 <p>搜索引擎</p>
                 <p><img src="pic/searchingIcon.png" width="25px">Searching</p>
-                <p><img src="pic/googleIcon.png" width="25px"<a href="http://www.google.ca" target="_blank" style="color: blanchedalmond">Google</a></p>
+                <p><img src="pic/googleIcon.png" width="25px"><a href="http://www.google.ca" target="_blank" style="color: blanchedalmond">Google</a></p>
                 <p><img src="pic/baiduIcon.png" width="24px" ><a href="http://www.baidu.com" target="_blank" style="color: blanchedalmond">Baidu</a></p>
                 <p><img src="pic/yahooIcon.png" width="25px"><a href="http://www.yahoo.com/" target="_blank" style="color: blanchedalmond">Yahoo</a></p>
             </div>
@@ -882,19 +887,19 @@ window.onload = function() {
                 <p><img src="pic/videoIcon.png" width="25px">Video</p>
                 <p><img src="pic/youtubeIcon.png" width="25px"><a href="http://www.youtube.com/" target="_blank" style="color: blanchedalmond">Youtube</a></p>
                 <p><img src="pic/bilibiliIcon.png" width="25px"><a href="http://www.bilibili.com/" target="_blank" style="color: blanchedalmond">Bilibili</a></p>
-                <p><a href="http://www.dnvod.tv" target="_blank" style="color: blanchedalmond">Duonao Videos</a></p>
+                <p><img src="pic/dnvodIcon.png"><a href="http://www.dnvod.tv" target="_blank" style="color: blanchedalmond">Duonao Videos</a></p>
             </div>
             <div class="divider"></div>
             <div class="gameRelated">
                 <p>游戏相关</p>
-                <p>Games</p>
+                <p><img src="pic/gameIcon.png" width="25px">Games</p>
                 <p><img src="pic/steamIcon.png" width="23px"><a href="https://store.steampowered.com/" target="_blank" style="color: blanchedalmond">Steam</a></p>
                 <p><img src="pic/battlenetIcon.png" width="25px"><a href="https://www.battlenet.com.cn/zh/" target="_balnk" style="color: blanchedalmond">Battlenet</a></p>
             </div>
             <div class="divider"></div>
             <div class="studying">
                 <p>学习工具</p>
-                <p>Studying</p>
+                <p><img src="pic/studyIcon.png" width="25px">Studying</p>
                 <p><img src="pic/desmosIcon.png" width="25px"><a href="http://www.desmos.com/" target="_blank" style="color: blanchedalmond">Desmos</a></p>
                 <p><a href="http://my.centennialcollege.ca/" target="_blank" style="color: blanchedalmond">MyCen</a></p>
                 <p><a href="http://e.centennialcollege.ca" target="_blank" style="color: blanchedalmond">ECen</a></p>
@@ -902,13 +907,24 @@ window.onload = function() {
             <div class="divider"></div>
             <div class="relaxingGames">
                 <p>小游戏网站</p>
-                <p>Relax</p>
+                <p><img src="pic/relaxIcon.png" width="25px">Relax</p>
                 <p><img src="pic/4399Icon.png" width="25px"><a href="https://www.4399.com/" target="_blank" style="color: blanchedalmond">4399</a></p>
-                <p><a href="http://www.7k7k.com/" target="_blank" style="color: blanchedalmond">7k7k</a></p>
+                <p><img src="pic/7k7kIcon.ico"><a href="http://www.7k7k.com/" target="_blank" style="color: blanchedalmond">7k7k</a></p>
             </div>
-        
-
-            
     </div>
+        <div>
+        <a onclick="pageScroll()" class="toTop">TOP</a>
+        <script>
+        function pageScroll(){
+            window.scrollBy(0,-100);    
+            scrolldelay = setTimeout('pageScroll()',100);
+            var sTop=document.documentElement.scrollTop+document.body.scrollTop;       
+            if(sTop==0) clearTimeout(scrolldelay);
+        }
+        </script>
+        </div>
+        <footer>
+            <p>Vincent Liu&copy; 2018</p>
+        </footer>
 	</body>
 </html>

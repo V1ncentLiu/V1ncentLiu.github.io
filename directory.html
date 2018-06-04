@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge.chrome=1" charset="utf-8">
+        <title>Directory - V1ncentliu.io</title>
+        <link rel="shortcut icon" href="favicon.ico">
+        <style>
+            body{
+                color: #66CC99;
+                background-color: #113355;
+                font-family:"Consolas",微软雅黑,serif;
+                margin-left: 0px;
+                margin-top: 0px;
+                margin-right: 0px;
+                margin-bottom: 0px;
+            }
+            footer{
+                text-align: center;
+            }
+            a{ 
+                text-decoration: none;
+                color: #66CC99;
+            }
+            a:hover{
+                color:#33aaff;
+                outline-style: inset;
+            }
+            .mainFrame{
+                background-color:#6699aa;
+                width: auto;
+                height: 1000px;
+                //margin-left: 150px;
+                color: blanchedalmond;
+            }
+            .toTop{
+                background-color: #113355; 
+                position: fixed;
+                right: 10px;
+                bottom: 10px;
+                padding: 15px;
+                outline-style: outset;
+            }
+            .newTab{
+                text-align: center;
+                float: left;
+            }
+            .newTab:hover{
+                outline-style: outset;
+            }
+        </style>
+    </head>
+    
+    <body>
+        <h1 class="directoryTitle">目录&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Directory</h1>
+        <a class="newTab" target="_blank" href="about:blank" style="display:block;width:150px;height:30px;">A new tab</a>
+        <a href="index.html"><img src="pic/directoryIcon.png" width="25px"></a>
+        <div class="mainFrame">
+            <h2>This is the directory. Anything cannot find on the index page can be found here.</h2>
+            <hr style="color: blanchedalmond">
+        </div> 
+
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        <a onclick="pageScroll()" class="toTop">TOP</a>
+        <script>
+        function pageScroll(){
+            window.scrollBy(0,-100);    
+            scrolldelay = setTimeout('pageScroll()',100);
+            var sTop=document.documentElement.scrollTop+document.body.scrollTop;       
+            if(sTop==0) clearTimeout(scrolldelay);
+        }
+        </script>        
+        <footer>
+            <p>Vincent Liu&copy; 2018</p>
+        </footer>            
+    </body>
+</html>
